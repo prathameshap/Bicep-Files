@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.managment.azure.com/schema/2019-04-01/DeploymentParameters.json#",
+    "contentVersion":"1.0.0.0",
+    "parameters":{
+        "storageName":{
+            "value": "bicepstgdemoExp"
+        },
+        "azureRegion": {
+            "value": "eastus2"
+        },
+        "storageSku": {
+            "value": "Standard_LRS"
+        }
+    }
+}
