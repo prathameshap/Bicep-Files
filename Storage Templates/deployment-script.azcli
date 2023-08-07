@@ -1,0 +1,11 @@
+# Login to Azure
+az login --use-device-code
+az account show --query name
+
+# Deploy the resource group and App-Serivce bicep code
+az group creat -l eastus2 -g 'experimentRG'
+az deployment group create -g 'experimentRG' -f .\simplestorage.bicep -c #'-c' is preflight validation for the existing resources
+az storage account list --query [].name -o table
+
+# Clean-up resources, without confirmation prompt
+#az group delete --name 'experimentRG' --yes
