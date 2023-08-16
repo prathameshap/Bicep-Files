@@ -1,0 +1,23 @@
+###Key principles in desinging Bicep
+
+1. Clear purpose
+
+2. Avoid anti-patterns
+
+3. Clear parameters and outputs 
+
+4. Self-contained
+
+5. No secrets as an output 
+
+###Azure Target Scopes
+
+1. Resource Group (default)
+
+2. Management Group
+
+3. Tenant
+
+4. Subscription 
+
+ 

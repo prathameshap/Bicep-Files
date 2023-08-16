@@ -29,3 +29,4 @@ resource bicepStorage 'Microsoft.Storage/storageAccounts@2021-09-01' = {
 @description('Output values')
 output storageId string =  bicepStorage.id
 output blobEndpoint string = bicepStorage.properties.primaryEndpoints.blob
+
