@@ -9,3 +9,9 @@ az storage account list --query [].name -o table
 
 # Clean-up resources, without confirmation prompt
 #az group delete --name 'experimentRG' --yes
+
+##Pre-flight checks before deployment into SUBSCRIPTION using what-if 
+#az deployment sub what-if --location eastus2 --template-file .\1-deploy-rg.bicep
+
+##Pre-flight checks before creation /deployment 
+#az deployment sub create --location eastus2 --template-file .\1-deploy-rg.bicep -c
