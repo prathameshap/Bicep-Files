@@ -6,11 +6,12 @@
 param storageName string 
 param storageRegion string 
 param storageSku string
+param environment string = 'dev'
 //param storageAccountKind string = 'StorageV2'
 
 @description('Storage Acount Description-parameters in the parameters file')
 resource bicepStorage 'Microsoft.Storage/storageAccounts@2021-09-01' = {
-  name: storageName
+  name: '${storageName}${environment}'
   location: storageRegion
   sku: { name: storageSku //tier is a read only property for sku
   }
